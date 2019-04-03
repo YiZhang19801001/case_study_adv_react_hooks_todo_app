@@ -31,3 +31,85 @@
     transform: rotate(360deg);
   }
 }
+
+header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #61dafb;
+  color: #8c8c8c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 3px #a5a5a5;
+}
+
+main {
+  margin-top: 12vh;
+  height: 78vh;
+  overflow: scroll;
+}
+
+button {
+  height: 2.5rem;
+  width: 5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  border: 1px solid #61dafb;
+  box-shadow: 0 0 3px #a5a5a5;
+  background-color: #fff;
+  color: #61dafb;
+  outline: none;
+  border-radius: 3px;
+  transition: all 300ms linear;
+}
+
+button:active {
+  box-shadow: none;
+  background-color: #61dafb;
+  color: #fff;
+  transition: all 300ms linear;
+}
+
+.todo-list {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.todo-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.todo-item input[type="text"] {
+  border: 1px solid #a5a5a5;
+  border-radius: 3px;
+  height: 1.2rem;
+}
+
+.todo-item input[type="checkbox"] {
+  height: 1.2rem;
+}
+
+button.small {
+  height: 1.2rem;
+  width: 3.5rem;
+  box-shadow: 0 0 3px red;
+  border-color: red;
+  color: red;
+}
+
+button.small:active {
+  box-shadow: none;
+  background-color: red;
+  color: #fff;
+}
